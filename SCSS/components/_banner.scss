@@ -1,0 +1,37 @@
+/*-----------------Estilos del Banner-------------------*/
+
+.banner {
+    margin-top: -188px;
+    background-color:$colorcafe;
+    position: relative; /*para que se muestre despues del menu de navegacion*/
+    z-index: -1000; /* uso de --Z-- que se vea la direccion y el phone que quedan debajo sino*/
+    border-top: 2px outset #ddd;
+    &:before {
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        top: 0;
+    }
+    &__img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    &__content {
+        width: 90%;
+        color: $colorblanquito;
+        text-align: center;
+        position: absolute; /*permito que el texto dentro, se quede alli*/
+        z-index: 1500;    /*uso de -- Z-- para que el texto no se vaya detras del fondo que creamos, el menu tiene 2000 asi que lo tapara*/
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%); /*----uso de Translate para centrar el texto---*/
+        font-size: 1.1em;
+        font-weight: bold;
+        text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
+    }
+}
+
+

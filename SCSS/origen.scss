@@ -1,0 +1,28 @@
+//ARCHIVO PRINCIPAL
+
+//VARIABLES Colores
+$fondo: #FDFEFE;
+$colorbase:#CC8E60;
+$hover: #D2B48C;
+$colorblanquito: #FBFCFC;
+$colorcafe: #644531;
+$cafeoscuro:#212121;
+
+
+//Fuentes
+$principal: 'Pacifico', cursive;
+$secundaria: 'Montserrat', sans-serif;
+$ligera: sans-serif;
+
+//IMPORT
+@import "base/reset";
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'components/herobanner';
+@import 'components/banner';
+@import 'views/home';
+@import 'layout/footer';
+@import 'views/about';
+@import 'views/gallery';
+@import 'views/catering';
+@import 'layout/form';

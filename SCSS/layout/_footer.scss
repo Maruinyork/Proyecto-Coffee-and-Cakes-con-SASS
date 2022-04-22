@@ -1,0 +1,28 @@
+/*----------- Estilos del Footer -----------*/
+
+.main-footer{
+    background: $cafeoscuro;
+    color: $colorblanquito;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+    font-family: sans-serif;
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer .social-icon__link{
+    color: $colorblanquito;
+    text-decoration: none;
+    &:before{
+        position: relative;
+        top: 3px;
+        right: 5px;
+    }
+}
+

@@ -1,0 +1,39 @@
+/*---------------Estilos Header-------------------*/
+
+.logo {
+    font-size: 2em;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    font-family: $principal;
+    font-weight: 10px;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
+}
+
+.header {
+    width: 100%;
+
+    &__contactInfo__phone {
+    color: $colorblanquito;
+    margin: -9px;
+    margin-left: 2px;
+    padding: 4px;
+    font-size: .8em;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    }
+    &__contactInfo__address {
+    padding: 10px;
+    color: $colorblanquito;
+    margin: -8px;
+    margin-left: -2px;
+    font-size: .8em;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    }
+}
+
+.icon-phone,
+.icon-location {
+    position: relative;
+    top: 1px;
+    right: 3px;
+}

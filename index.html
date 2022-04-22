@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coffee & Cakes </title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/destino.css">
+    <link rel="stylesheet" href="css/menuMobile.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Coffee & Cakes </h1>
+            </div>
+            <div class="header__contactInfo column column--50"> 
+                <div class="header__contactInfo__phone">
+                    <span class="icon-phone"><i class="fa-solid fa-phone">&nbsp+54 11 2580 000</i></span>
+                </div>
+                <div class="header__contactInfo__address">
+                    <span class="icon-location"><i class="fa-solid fa-location-dot">&nbspAv. Santa Fe 2400 - Bs As, Argentina</i></span>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fa-solid fa-bars" id="btnmenu"></i>
+        </label>
+
+        <nav class="nav">
+            <ul>
+                <li class="menu__item"><a href="index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="pages/about.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="pages/gallery.html" class="menu__link">Galeria</a></li>
+                <li class="menu__item"><a href="pages/catering.html" class="menu__link">Catering</a></li>
+                <li class="menu__item"><a href="pages/contact.html" class="menu__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contain">
+        <input type="checkbox" id="btn-mas">
+        <div class="webs">
+            <a href="https://www.facebook.com" target="blank" class="fa-brands fa-facebook"></a>
+            <a href="https://www.twitter.com" target="blank" class="fa-brands fa-twitter"></a>
+            <a href="https://www.instagram.com" target="blank" class="fa-brands fa-instagram"></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa-solid fa-plus" id="btnplus"></label>
+        </div>
+    </div>
+            
+    <section class="heroBanner">
+        <div class="banner__content">La tienda de tortas y café más dulce de Buenos Aires</div>
+    </section>
+            
+    <main class="main">
+        <div class="contenedor-nosotros contenedor">
+            <div class="texto-nosotros">
+                <p class="welcome">Bienvenido a</p>
+                <h2>Su tienda dulce</h2>
+                <p class="welcome2">Aliquam et varius dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean in hendrerit urna. Duis in molestie enim. Nunc id velit dignissim, eleifend urna nec, finibus erat. Pellentesque mollis justo vitae nulla pulvinar venenatis. Curabitur et libero tortor. Sed congue pulvinar sapien, at iaculis sem volutpat et. In pretium feugiat dignissim. Ut dui magna, auctor vitae eros in, elementum ornare tellus. Aliquam erat volutpat.</p>
+                <a href="./pages/contact.html" class="btn btn--contact"><i class="fa-solid fa-envelope"></i>&nbspContacto</a>
+            </div>
+            
+            <div class="imagenes-nosotros">
+                <div class="imagen1">
+                    <img src="./img/nosotrosimg1.jpg" alt="">
+                    <img src="./img/niño2.jpg" alt="">
+                </div>
+                <div class="imagenes2">
+                    <img src="./img/nosotrosimg3.jpg" alt="">
+                    <img src="./img/nosotrosimg2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section class="group today-special">
+            <h2 class="group__title" id="titulo2">Nuestras especialidades para la merienda</h2>
+            <div class="container container--flex">
+                <div class="column column--50-25">
+                    <img src="img/combo1.jpg" alt="cafe y macarons" class="today-special__img">
+                    <div class="today-special__title">Especial 1</div>
+                    <div class="today-special__info" >Americano + macaron</div>
+                    <div class="today-special__price">$300</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/combo2.jpg" alt="cheesecake y cafe" class="today-special__img">
+                    <div class="today-special__title">Especial 2</div>
+                    <div class="today-special__info" >Capuccino + cookies</div>
+                    <div class="today-special__price">$300</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/combo3.jpg" alt="cafe americano y muffin" class="today-special__img">
+                    <div class="today-special__title">Especial 3</div>
+                    <div class="today-special__info" >Macchiato + muffin</div>
+                    <div class="today-special__price">$250</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/combo4.jpg" alt="cafe espresso y Cupcakes" class="today-special__img">
+                    <div class="today-special__title">Especial 4</div>
+                    <div class="today-special__info" >Espresso + cupcakes</div>
+                    <div class="today-special__price">$250</div>
+                </div>
+            </div>       
+        </section>
+    </main>
+        
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33"> 
+                <h2 class="column__title">¿Por qué elegirnos?</h2>
+                <p class="column__txt">Maecenas commodo, est et vehicula finibus, neque mi hendrerit odio, vitae eleifend eros nibh eu metus.</p><br>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">Av Santa Fe 2400 - Bs As, Argentina</p>
+                <p class="column__txt">Telefono: +54 11 2580 000</p>
+                <p class="column__txt">contact@coffeecakes.com</p><br>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Sigamos conectados</h2>
+                <p class="column__txt"><a href="https://www.facebook.com" target="blank" class="social-icon__link"> <i class="fa-brands fa-facebook"></i></a><b>&nbspFacebook</b></p>
+                <p class="column__txt"><a href="https://twitter.com" target="blank" class="social-icon__link"> <i class="fa-brands fa-twitter"></i></a><b>&nbspTwitter</b></p>
+                <p class="column__txt"><a href="https://www.instagram.com" target="blank" class="social-icon__link"> <i class="fa-brands fa-instagram"></i></a><b>&nbspInstagram</b></p>
+            </div>
+        </div>
+        <p class="copy"> © 2022 Maruinyork | Todos los derechos reservados </p>
+    </footer>
+            
+</body>
+</html>

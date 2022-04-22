@@ -1,0 +1,79 @@
+/*-------------Estilos del Menu--------------*/
+
+.nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+
+.icon-menu {
+  display: block;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.social-icon {
+    display:flex; /*se alinean los iconos horizontalmente a la derecha de la screen*/
+    justify-content: space-between;  
+    i {
+    color: black;
+    margin-left: 10px;
+    display: flex; /*se la doy para que el icono interno se centre*/
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+    background: #FFF;
+    border-radius: 50%;
+    }
+    &__link {
+        text-decoration: none;
+    }
+}
+
+
+.ul {
+    display: flex; /*es el padre contenedor*/
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    height: 0;   /*esto es para que se pueda animar*/
+    overflow: hidden;
+    transition: height .3s linear; /*el menu aparece despacio, si en menu height dijera auto, no se animaria*/
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: #FFF;
+    text-decoration: none;
+    &:hover {  /* la clase menu__link pertenece a los enlaces "a href"*/ 
+        background: $hover;
+    }
+    &--select {
+        background: $colorbase;
+    }
+}
+
+.mostrar {
+    height: 250px; 
+} 
+

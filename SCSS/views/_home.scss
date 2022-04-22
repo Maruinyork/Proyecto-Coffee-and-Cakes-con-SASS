@@ -1,0 +1,499 @@
+/*-----------------Estilos Principales index------------------*/
+
+.group--color .container {
+    background: $colorbase;
+    color: $colorblanquito;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: $principal;
+    font-weight: 100; 
+}
+
+.column__title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #B5926D;
+    padding: 10px;
+    margin: 17px auto;
+    color: $colorblanquito;
+    border-radius: 5%;
+}
+
+.btn:hover {
+    background: none;
+    color:#20201D;
+    border: 2px solid $cafeoscuro;
+}
+
+.group__title {
+    text-align: center;
+    font-family: $principal;
+    font-size: 100;    /*para quitarle el grosor*/
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+.today-special .column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.today-special__img {
+    margin: auto;
+    max-width: 350px;
+}
+
+.today-special__title {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.today-special__price {
+    font-size: 1.5em;
+    color: $colorbase;
+}
+
+.main__txt {
+    padding-bottom: 20px;
+}
+
+.imagenes2 img {
+    max-width: 100%;
+    &:nth-child(2){  /*Uso de pseudoclase*/
+        margin-top: 10px;
+    }
+}
+
+.imagen1 img{
+    max-width: 100%;
+    &:nth-child(2){
+        margin-top: 11px;
+    }
+}
+
+.contenedor-nosotros {
+    padding-top: 3rem;
+}
+
+.texto-nosotros, 
+.imagenes-nosotros {
+    flex: 0 0 calc(50% - 1rem); /*el primer parametro es de grow, no lo quiero mas grande, le doy 0, tampoco quiero que sea mas chico, asi que tmb le doy 0*/
+}
+
+.imagenes-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagenes-nosotros img {
+    border-radius: 5px;
+}
+
+.imagen1, 
+.imagenes2 {
+    flex: 0 0 calc(50% - 1rem); /*igual que el anterior y el basis le doy 50% y le resto 1 de la separacion*/
+}
+
+.texto-nosotros .welcome {
+    font-size: 2rem;
+    color:#4C2C13;
+    text-align: center;
+}
+
+.texto-nosotros h2 {
+    font-size: 2rem;
+    font-family: $principal;
+    text-align: center;
+}
+
+.welcome2{
+    text-align: center;
+}
+
+/*-----------------Estilos responsive------------------*/
+
+@media screen and (min-width:480px) {
+
+    .logo {
+        color: #FFF;
+        padding: 0;
+    }
+
+    .header__contactInfo {
+        text-align:right;
+        display: inline;
+    }
+
+    .banner {
+        margin-top: -220px;
+        z-index: -1000;    /*------uso de Z----*/
+        &__img {
+            height: 700px;
+        }
+        &__content {
+            font-size: 1.6em;
+        }
+    }
+
+    .heroBanner {
+        margin-top: -175px;
+    }
+
+    .main {
+        padding-bottom: 15px;
+    }
+
+    .header__contactInfo__phone {
+        background: none;
+        color: $colorblanquito;
+        font-size: small;
+    }
+
+    .header__contactInfo__address{
+        color:$colorblanquito;
+        font-size: small;
+    }
+
+    .nav {
+        background: rgba(0,0,0,0.1);
+    }
+    
+    .btn {
+        display: inline-block;
+    }
+
+    .column--50-25 {
+        width: 49%;
+    }
+
+    .column--33 {
+        width: 32%;
+    }
+
+    .column__title {
+        font-size: 1.2em;
+    }
+
+    .today-special .column {
+        border: 5px solid #B5926D;
+        padding: 5px;
+    }
+
+    .today-special__img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .main-footer .container--flex {
+       align-items: flex-start;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+.logo {
+    font-size: 3em;
+}
+
+.banner__content{
+    font-size: 2em;
+}
+.contenedor-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-nosotros .welcome {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+
+.texto-nosotros h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.welcome2 {
+    text-align: justify;
+    margin-left: 40px;
+}
+
+.btn--contact {
+    margin-left: 40px;
+}
+
+.imagenes2 {
+    margin-right: 40px;
+    margin-left: 8px;
+} 
+
+.column__txt {
+    font-size: 1.1em;
+    line-height: 14px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    background-image: none;
+}
+
+.column--50-25 {  /*4 columnas de 25% cada una, son las columnas de la galeria*/
+    width: 24%;
+}
+
+.column__title {
+    font-size: 1.3em;
+    margin-bottom: 17px;
+    margin-top: 19px;
+    font-family: $secundaria;
+}
+
+.group__title {
+    font-size: 2.2em;
+    margin-top: 80px;
+}
+
+.main-footer {
+    font-size: .6em;
+}
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .heroBanner { 
+        margin-top: -195px;
+        height: 110vh;
+    }
+
+    .heroBanner:before {
+        background-color: rgba(0, 0, 0, 0.2); /*oscurezco el banner*/
+     }  
+
+     .banner {
+        margin-top: -270px;
+     }
+
+    .banner:before {
+        background-color: rgba(0, 0, 0, 0.1); /*oscurezco un poco las tonalidades*/
+    }
+
+    .logo {
+        font-size: 3.5em;
+        padding: 0;
+    }
+
+    .main-header__contactInfo__phone,
+    .main-header__contactInfo__address {
+        font-size: 15px;
+        padding-right: 0;
+    }
+    
+    .header__contactInfo__address {
+       margin-bottom: .5px;
+    }
+
+    .nav {
+      padding:0;
+    }
+
+    .banner__content{
+        font-size: 2.3em;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .menu {
+        position: static; 
+        display: flex;   /*uso de flexbox*/
+        height: auto;
+        width: auto;
+    }
+
+    .menu__link {
+        padding: 20px;
+    }
+
+    .today-special__title{
+        font-size: 1.4em;
+    }
+
+    .today-special__price {
+        font-size: 1.7em;
+    }
+
+    .today-special__info {
+        font-size: 1.3em;
+    }
+
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: .6em;
+        justify-content: center;
+    }
+
+    .main-footer h2 {
+        font-size: 1.5em;
+    }
+
+    .texto-nosotros .welcome {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .texto-nosotros h2 {
+        margin-bottom: 20px;
+    }
+
+    .group__title {
+        font-size: 3em;
+    }
+
+    .welcome2 {
+        font-size: 1.3em;
+        margin-top: -10px;
+    }
+    
+    .texto-nosotros .welcome {
+        margin-bottom: 0px;
+    }
+
+    .texto-nosotros h2 {
+       margin-top: 0px;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .heroBanner {
+        margin-top: -220px;
+    }
+
+    .texto-nosotros .welcome {
+        font-size: 3.5rem;
+        margin-left: 50px;
+    }
+    
+    .texto-nosotros h2 {
+        font-size: 3.5rem;
+        margin-left: 50px;
+    }
+    
+    .welcome2 {
+        font-size: 1.4em;
+        margin-left: 50px;
+    }
+
+    .btn--contact {
+        margin-top: 70px;
+        justify-items: center; 
+        margin-left: 50px;
+    }   
+}
+
+@media screen and (min-width:1440px){
+
+    .heroBanner { 
+        height: calc(100vh);
+        width: 100%; 
+        margin-top: -250px;
+        background-size: cover;
+        background-color: $colorcafe;
+        background-position: center;
+    }
+    
+    .heroBanner__img {
+        width: 100%;
+        height: 1100px;
+        object-fit: cover;
+    }
+
+    .column__title {
+        font-size: 1.5em;
+        margin-bottom: 25px;
+    }
+
+    .main__txt{
+        font-size:1.4em;
+        font-weight: lighter;
+    }
+
+    .today-special__info,
+    .today-special__price{
+        font-size:1.4em;
+    }
+
+    .logo {
+        font-size: 4em;
+    }
+
+    .nav {
+        font-size: 2em;
+    }
+
+    .header__contactInfo__phone,
+    .header__contactInfo__address{
+        font-size: 1.3em;
+    }
+
+    .copy{
+        font-size: large;
+    }
+}
+
+@media screen and (min-width:1600px) {
+
+    .container {
+        width: 1400px;
+    }
+
+    .banner__img {
+        height: 800px;
+    }
+
+    .today-special img {
+         height: 300px;
+    }
+       
+    .today-special__title,
+    .today-special__info,
+    .today-special__price{
+        font-size:1.6em;
+    }
+
+    .nav {
+        font-size: 1.3em;
+    }
+
+    .header__contactInfo__phone,
+    .header__contactInfo__address{
+        font-size: 1.2em;
+    }
+
+    .main__txt{
+        font-size:1.5em;
+        font-weight: lighter;
+    }
+
+    .main__title{
+        font-size: 3em;
+    }
+}
+
