@@ -160,8 +160,7 @@
     .bannerC {
         margin-top: -190px;
         &__img {
-            width: 100%;
-            height: 160vh;
+            @include size(160vh, 100%);
         }
     }
 

@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #FDFEFE;
 }
 
 /*--------------Estilos base----------------------*/
@@ -34,6 +33,10 @@ img {
 
 .column {
   width: 100%;
+}
+
+body {
+  background: #fff;
 }
 
 /*---------------Estilos Header-------------------*/
@@ -87,12 +90,12 @@ img {
   color: white;
   border: 1px solid white;
   border-radius: 3px;
-  width: 40px;
-  height: 40px;
   line-height: 40px;
   text-align: center;
   cursor: pointer;
   font-size: 1.5em;
+  height: 40px;
+  width: 40px;
 }
 
 .social-icon {
@@ -108,10 +111,10 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  width: 35px;
-  height: 35px;
   background: #FFF;
   border-radius: 50%;
+  height: 35px;
+  width: 35px;
 }
 .social-icon__link {
   text-decoration: none;
@@ -126,17 +129,17 @@ img {
   position: absolute;
   top: 60px;
   left: 0;
-  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
-  height: 0;
-  /*esto es para que se pueda animar*/
   overflow: hidden;
   transition: height 0.3s linear;
   /*el menu aparece despacio, si en menu height dijera auto, no se animaria*/
+  height: 0;
+  width: 100%;
+  /*height: 0, es para que se pueda animar*/
 }
 
 .menu__link {
@@ -234,9 +237,9 @@ img {
   top: 0;
 }
 .banner__img {
-  width: 100%;
-  height: 450px;
   object-fit: cover;
+  height: 450px;
+  width: 100%;
 }
 .banner__content {
   width: 90%;
@@ -356,7 +359,6 @@ img {
   display: flex;
   justify-content: space-evenly;
 }
-
 .imagenes-nosotros img {
   border-radius: 5px;
 }
@@ -974,10 +976,9 @@ img {
 /*------------------Catering-------------------*/
 /*---------Aca se usa GRID---------*/
 .sidebar {
-  border-top: 1px solid #FFE082;
+  border-top: 1px solid #D2B48C;
   margin-top: 40px;
 }
-
 .sidebar h2 {
   margin-top: 80px;
   margin-bottom: 20px;
@@ -1013,24 +1014,18 @@ img {
   margin-bottom: 2rem;
   text-decoration: none;
 }
-.boton--primario {
-  padding: 1rem 1.5rem;
+.boton--primario, .boton--secundario {
+  padding: 1rem 1.2rem;
   font-size: 1em;
   margin-top: 20px;
   border-radius: 50%;
-  background: #FBFCFC;
-  color: #212121;
+  background-color: #644531;
+  color: #fff;
   border: 4px double #CC8E60;
 }
 .boton--secundario {
-  padding: 1rem 1rem;
-  margin-top: 25px;
   margin-bottom: 15px;
   border-radius: 6%;
-  font-size: 1rem;
-  background-color: #644531;
-  border: 2px solid #DECFAC;
-  color: #fff;
   transform: translateX(15px);
 }
 .boton:hover {
@@ -1104,7 +1099,7 @@ img {
     background: #FBFCFC;
     padding-right: 14px;
     padding-left: 8px;
-    color: #20201D;
+    color: #212121;
     transform: none;
     margin-top: 0;
   }
@@ -1221,7 +1216,7 @@ img {
     width: 53vw;
   }
 
-  .boton--primario {
+  .boton--primario, .boton--secundario {
     font-size: 1.8em;
   }
 }
@@ -1403,8 +1398,8 @@ img {
     margin-top: -190px;
   }
   .bannerC__img {
-    width: 100%;
     height: 160vh;
+    width: 100%;
   }
 
   form {

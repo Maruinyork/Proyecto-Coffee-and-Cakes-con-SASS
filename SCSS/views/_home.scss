@@ -96,10 +96,9 @@
 .imagenes-nosotros {
     display: flex;
     justify-content: space-evenly;
-}
-
-.imagenes-nosotros img {
-    border-radius: 5px;
+    img {
+        border-radius: 5px;
+    }
 }
 
 .imagen1, 

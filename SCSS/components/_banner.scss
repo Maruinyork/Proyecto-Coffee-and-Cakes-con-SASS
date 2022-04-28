@@ -2,7 +2,7 @@
 
 .banner {
     margin-top: -188px;
-    background-color:$colorcafe;
+    background-color: map-get($mapa, colorcafe);
     position: relative; /*para que se muestre despues del menu de navegacion*/
     z-index: -1000; /* uso de --Z-- que se vea la direccion y el phone que quedan debajo sino*/
     border-top: 2px outset #ddd;
@@ -15,9 +15,8 @@
         top: 0;
     }
     &__img {
-        width: 100%;
-        height: 450px;
         object-fit: cover;
+        @include size(450px, 100%);
     }
     &__content {
         width: 90%;

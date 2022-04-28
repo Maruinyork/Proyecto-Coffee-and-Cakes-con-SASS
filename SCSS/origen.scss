@@ -16,6 +16,8 @@ $ligera: sans-serif;
 
 //IMPORT
 @import "base/reset";
+@import 'utilities/mixins';
+@import 'utilities/maps';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'components/herobanner';

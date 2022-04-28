@@ -1,13 +1,12 @@
 /*------------------Catering-------------------*//*---------Aca se usa GRID---------*/
 
 .sidebar {
-    border-top: 1px solid #FFE082;
+    border-top: 1px solid $hover;
     margin-top: 40px;
-}
-
-.sidebar h2{
-    margin-top: 80px;
-    margin-bottom: 20px;
+    h2{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
 }
 
 .sidebar-combo{
@@ -40,24 +39,19 @@
     margin-bottom: 2rem;
     text-decoration: none;
     &--primario {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.2rem;
         font-size: 1em;
         margin-top: 20px;
         border-radius: 50%;
-        background: $colorblanquito;
-        color:$cafeoscuro;
+        background-color: map-get($mapa, colorcafe);
+        color:#fff;
         border: 4px double $colorbase;
     }
     &--secundario {
-        padding: 1rem 1rem;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        border-radius: 6%;
-        font-size: 1rem;
-        background-color: $colorcafe;
-        border: 2px solid #DECFAC;
-        color:#fff;
-        transform: translateX(15px);
+        @extend .boton--primario;
+         margin-bottom: 15px;
+         border-radius: 6%;
+         transform: translateX(15px);
     }
     &:hover {
         background: none;
@@ -85,7 +79,6 @@
         color: $cafeoscuro;
     }
 }
-
 
 .no-margin {
      font-size:larger;
@@ -116,7 +109,6 @@
             transform: translate(-30px, 10px);
         }
     }
-
 }
 
 @media screen and (min-width:768px){
@@ -132,11 +124,11 @@
     }
     
     .sidebar {
-        border: 1px solid #D2B48C;
+        border: 1px solid $hover;
         background: $colorblanquito;
         padding-right: 14px;
         padding-left: 8px;
-        color: #20201D;
+        color: $cafeoscuro;
         transform: none;
         margin-top: 0;
         h2 {

@@ -1,0 +1,11 @@
+//Map
+$mapa:( /*Declaramos el mapa*/
+    //Key : Value //
+colorbase:#CC8E60,
+colorcafe: #644531,
+colorsnow: #fff
+);
+
+body {
+    background: map-get($mapa, colorsnow);
+}
