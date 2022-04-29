@@ -8,7 +8,7 @@
     background-color:$colorcafe;
     background-position: center;
     transition: all .1s ease-in-out;
-    background-image: url('../img/slider1.jpg');
+    background-image: url('../img/slider1-min.jpg');
     animation: heroBanner 15s infinite linear;
     position: relative; /*para que se muestre despues del menu de navegacion*/
     z-index: -1000;
@@ -30,30 +30,30 @@
 
 @keyframes heroBanner { /*---LINEA DE TIEMPO--- la animacion se llama heroBanner*/
     0% {
-        background-image: url('../img/slider1.jpg');
+        background-image: url('../img/slider1-min.jpg');
     }
     25% {
-        background-image: url('../img/slider1.jpg');
+        background-image: url('../img/slider1-min.jpg');
     }
 
     26% {
-        background-image: url('../img/slider2.jpg');
+        background-image: url('../img/slider2-min.jpg');
     }
     
     50% {
-        background-image: url('../img/slider2.jpg');
+        background-image: url('../img/slider2-min.jpg');
     }
     51% {
-        background-image: url('../img/slider3.jpg');
+        background-image: url('../img/slider3-min.jpg');
     }
     75% {
-        background-image: url('../img/slider3.jpg');
+        background-image: url('../img/slider3-min.jpg');
     }
     76% {
-        background-image: url('../img/slider4.jpg');
+        background-image: url('../img/slider4-min.jpg');
     }
     100% {
-        background-image: url('../img/slider4.jpg');
+        background-image: url('../img/slider4-min.jpg');
     }
 }
 
