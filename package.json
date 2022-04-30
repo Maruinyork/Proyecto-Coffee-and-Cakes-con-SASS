@@ -1,11 +1,11 @@
 {
   "name": "proyecto-con-sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Coffe and Cakes es una tienda de tortas y cafe ubicada en Buenos Aires que no solo brinda una exquisita pasteleria sino tambien una gran variedad de cafes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Maruinyork",
   "license": "ISC"
 }
